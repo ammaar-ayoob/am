@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html><head>
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="11-todo.css">
+</head>
+<body>
+<p></p>Todo List<p></p>
+
+    <div class="todo-input-grid">
+
+    <input placeholder="todo name"
+     class="js-name-input name-input">
+
+    <input type="date" 
+    class="js-due-date-input due-date-input">
+
+    <input placeholder="Description" 
+    class="js-extra-description extra-description">
+
+    <input type="time"
+    class="js-set-time set-time">
+
+    <button class="add-todo-button js-add-todo-button">Add</button>
+    </div>
+
+<div class="js-todo-list todo-grid">
+    <div>make dinner</div>
+    <div>2022-12-22</div>
+    <div>chipsi mayay</div>
+    <div>8:00 pm</div>
+    <button onclick="
+      todoList.splice(0, 1);
+      renderTodoList();
+    " class="delete-todo-button">Done</button>
+    
+    
+    <div>wash dishes</div>
+    <div>2022-12-22</div>
+    <div>plates only</div>
+    <div>3:00 pm</div>
+    <button onclick="
+      todoList.splice(1, 1);
+      renderTodoList();
+    " class="delete-todo-button">Done</button>
+    
+    </div>
+
+  <script src="11-todo.js"></script>
+
+</body></html>
